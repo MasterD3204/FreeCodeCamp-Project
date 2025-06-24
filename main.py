@@ -2,14 +2,14 @@
 from RPS_game import play, mrugesh, abbey, quincy, kris, human, random_player
 #from RPS import player
 from unittest import main
-from RPS import QuincySlayer, KrisSlayer, MrugeshSlayer
+from RPS import MarkovBot
 
-bot = KrisSlayer()
+bot = MarkovBot(order=4)
 
-play(bot.make_move, quincy, 1000)
-play(bot.make_move, abbey, 1000)
-play(bot.make_move, kris, 1000)
-play(bot.make_move, mrugesh, 1000)
+#play(bot.playy, quincy, 1000)
+#play(bot.playy, abbey, 1000)
+#play(bot.playy, kris, 1000)
+#play(bot.playy, mrugesh, 1000)
 
 # Uncomment line below to play interactively against a bot:
 # play(human, abbey, 20, verbose=True)
@@ -17,7 +17,5 @@ play(bot.make_move, mrugesh, 1000)
 # Uncomment line below to play against a bot that plays randomly:
 # play(human, random_player, 1000)
 
-
-
 # Uncomment line below to run unit tests automatically
-# main(module='test_module', exit=False)
+main(module='test_module', exit=False)
